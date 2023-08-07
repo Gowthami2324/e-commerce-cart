@@ -1,0 +1,222 @@
+﻿*{
+    padding:0px;
+    margin:0px;
+}
+.container{
+    margin:auto 40%;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 646px;
+    padding-bottom:15px;
+}
+.title-content {
+    color: #007F61;
+    font-family: Metropolis;
+    font-size: 18.076px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#horizontal-line {
+    width: 93.996px;
+    height: 0.904px;
+}
+.content {
+    width: 340.734px;
+    height: 74.112px;
+    flex-shrink: 0;
+    border-radius: 3.615px;
+    border: 0.904px solid #C8C8C8;
+    background: #FFF;
+    display: flex;
+}
+#content, #main{
+    padding-bottom:15px;
+}
+.text-container, .row-content {
+    display: flex;
+    padding-left: 18.03px;
+    justify-content: space-between;
+}
+svg {
+    width: 14.461px;
+    height: 14.461px;
+    flex-shrink: 0;
+    stroke-width: 0.904px;
+    stroke: #DADADA;
+    padding-left:21.69px;
+    padding-top:29.83px
+}
+.text, #main-text {
+    color: #000;
+    font-family: Metropolis;
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top:19.88px;
+}
+#main-text{
+    padding-left:45px;
+}
+#sale {
+    padding-top: 29.83px;
+    padding-left: 120px;
+    text-transform: uppercase;
+    padding-right:24.77px;
+}
+#price,#sale, #price2,#sale2 {
+    color: #000;
+    font-family: Metropolis;
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+.circle-button2 {
+    fill: #007F61;
+    width: 9.038px;
+    height: 9.038px;
+}
+.main {
+    border-radius: 3.615px;
+    border: 0.904px solid #007F61;
+    background: #F4FBF9;
+    width: 340.734px;
+    height: 161.781px;
+}
+#main-text,#price2,#sale2 {
+    font-family: Inter;
+}
+.text{
+    padding-bottom:5.88px;
+}
+#sale2 {
+    text-transform: uppercase;
+}
+#amount {
+    color: #000000;
+    font-family: Inter;
+    font-size: 9.942px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+}
+strike {
+    background: #9F9F9F;
+    width: 56.036px;
+    height: 0.678px;
+}
+
+#popular {
+    color: #007F61;
+    font-family: Inter;
+    font-size: 12.653px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top:19.38px;
+    padding-left:150.4px;
+    padding-right:24.77px;
+}
+.size-select{
+    display:flex;
+    flex-direction:row;
+    padding-left:45.23px;
+    gap:5px;
+    padding-bottom:5px;
+}
+.tag1,.tag2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 9.038px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top:40px;
+}
+.tag2 {
+    padding-top: 10px;
+}
+.size-select ul li {
+    list-style-type: none;
+    border-radius: 1.808px;
+    border: 0.904px solid #D9D9D9;
+    background: #FFF;
+    width: 65.978px;
+    height: 25.306px;
+    display: inline-block;
+    object-fit:contain;
+}
+#size-chat {
+    color: #000;
+    font-family: Inter;
+    font-size: 9.942px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+.main-content, .main-content2 {
+    display: flex;
+    flex-direction: row;
+}
+.main-content2{
+    padding-left:54.23px;
+    padding-right:30px;
+    justify-content:space-between;
+    padding-top:5.88px;
+}
+#bottom-content {
+    display: flex;
+    flex-direction:row;
+    justify-content:end;
+    gap:60px;
+    
+}
+#size{
+    width:68px;
+    height:28px;
+}
+.button {
+    width: 341px;
+    height: 48px;
+    border-radius: 4px 4px 4px 0px;
+    background: #007F61;
+   
+}
+.card {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+   text-align:center;
+   padding-top:15px;
+
+}
+#shipping {
+    color: #007F61;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.6;
+}
+.total-cost {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
