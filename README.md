@@ -1,0 +1,1 @@
+Access e-commerce cart page through this [link](https://admirable-begonia-90fdd2.netlify.app/index.html)
