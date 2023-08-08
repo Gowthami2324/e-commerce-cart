@@ -4,23 +4,23 @@
 
 <head>
   <meta charset="utf-8" />
-  <title> Front-End page</title>
+  <title>Front-End page</title>
   <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <div class="container">
     <div class="title">
-      <hr id='horizontal-line' />
-      <p class='title-content'>Bundle & Save</p>
-      <hr id='horizontal-line' />
+      <hr id="horizontal-line" />
+      <p class="title-content">Bundle & Save</p>
+      <hr id="horizontal-line" />
     </div>
-    <div id="content">
+    <div class="content-item" onclick="onClick(this)">
       <div class="content">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803" />
+          <circle id="circle-0" cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803" />
         </svg>
         <div class="text-container">
           <div>
@@ -33,12 +33,12 @@
         </div>
       </div>
     </div>
-    <div id="main">
+    <div class="content-item content-item-bg" onclick="onClick(this)">
       <div class="main">
-        <div class=main-content>
+        <div class="main-content">
           <div class="circle-button2">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61" />
+              <circle id="circle-1" cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61" />
             </svg>
           </div>
           <div>
@@ -52,9 +52,11 @@
           <div>
             <p id="price2">DKK 345.00</p>
           </div>
-          <div> <strike>
+          <div>
+            <strike>
               <p id="amount">DKK 195.00</p>
-            </strike></div>
+            </strike>
+          </div>
           <div>
             <h6 id="sale2">40% off</h6>
           </div>
@@ -65,45 +67,51 @@
             <h6 id="size-chat">Size</h6>
             <li>
               <select class="select-sizes">
-                <option value="small">s </option>
-                <option value="medium">m </option>
-                <option value="large">l </option>
+                <option value="small">s</option>
+                <option value="medium">m</option>
+                <option value="large">l</option>
               </select>
             </li>
           </ul>
           <ul>
             <h6 id="size-chat">Colour</h6>
-            <li><select class="select-options">
+            <li>
+              <select class="select-options">
                 <option value="red">Red</option>
-                <option value="green">Green </option>
+                <option value="green">Green</option>
                 <option value="white">White</option>
-              </select></li>
+              </select>
+            </li>
           </ul>
         </div>
         <div class="size-select">
           <p class="tag2">#2</p>
           <ul>
-            <li><select class="select-sizes">
-                <option value="small">s </option>
-                <option value="medium">m </option>
-                <option value="large">l </option>
-              </select></li>
+            <li>
+              <select class="select-sizes">
+                <option value="small">s</option>
+                <option value="medium">m</option>
+                <option value="large">l</option>
+              </select>
+            </li>
           </ul>
           <ul>
-            <li><select class="select-options">
+            <li>
+              <select class="select-options">
                 <option value="red">Red</option>
-                <option value="green">Green </option>
+                <option value="green">Green</option>
                 <option value="white">White</option>
-              </select></li>
+              </select>
+            </li>
           </ul>
         </div>
         <h6></h6>
       </div>
     </div>
-    <div id="content">
+    <div class="content-item" onclick="onClick(this)">
       <div class="content">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803" />
+          <circle id="circle-2" cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803" />
         </svg>
         <div class="text-container">
           <div>
@@ -116,7 +124,7 @@
         </div>
       </div>
     </div>
-    <div id="content">
+    <div class="content-item">
       <div id="bottom-content">
         <p id="shipping">Free 2 Day Shipping</p>
         <p class="total-cost">Total : DKK 360.00</p>
@@ -126,11 +134,26 @@
       <p class="card">+ Add to Cart</p>
     </div>
     <div>
-      
-      <p id="cpy-right"> &copy; Powered  by Pumper</p>
+      <p id="cpy-right">&copy; Powered by Pumper</p>
     </div>
   </div>
+  <script>
+    function onClick(currentElement) {
+      var blocks = document.querySelectorAll(".content-item");
 
+      for (var i = 0; i < blocks.length; i++) {
+        if (blocks[i] === currentElement) {
+          blocks[i].classList.add("content-item-bg");
+          const circleElement = document.getElementById("circle-" + i);
+          circleElement.setAttribute("fill", "#007F61");
+        } else {
+          blocks[i].classList.remove("content-item-bg");
+          const circleElement = document.getElementById("circle-" + i);
+          circleElement.setAttribute("fill", "#fff");
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
