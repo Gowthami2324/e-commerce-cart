@@ -154,6 +154,10 @@ strike {
     display: inline-block;
     object-fit:contain;
 }
+.select-sizes, .select-options{
+    width: 65.978px;
+    height: 25.306px;  
+}
 #size-chat {
     color: #000;
     font-family: Inter;
