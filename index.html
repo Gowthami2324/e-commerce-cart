@@ -1,117 +1,136 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8" />
-    <title> Front-End page</title>
-    <link rel="stylesheet" href="index.css"/>
+  <meta charset="utf-8" />
+  <title> Front-End page</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
+  <div class="container">
     <div class="title">
-        <hr id='horizontal-line' />
-        <p class='title-content'>Bundle & Save</p>
-        <hr id='horizontal-line' />
+      <hr id='horizontal-line' />
+      <p class='title-content'>Bundle & Save</p>
+      <hr id='horizontal-line' />
     </div>
     <div id="content">
-    <div class="content">
+      <div class="content">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-  <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803"/>
-</svg>
+          <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803" />
+        </svg>
         <div class="text-container">
-       <div>
-        <p class="text">1 Pair</p>
-        <p id="price">DKK 195.00</p>
-       </div>
-       <div>
-        <p id ="sale">50% off</p>
-     </div>
-     </div>
-    </div>
+          <div>
+            <p class="text">1 Pair</p>
+            <p id="price">DKK 195.00</p>
+          </div>
+          <div>
+            <p id="sale">50% off</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="main">
-    <div class="main"> 
-       <div class= main-content>
-           <div class="circle-button2">
-<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-  <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61"/>
-</svg></div>
-           <div>
-           <h6 id="main-text">2 Pair</h6>
+      <div class="main">
+        <div class=main-content>
+          <div class="circle-button2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <circle cx="4.92136" cy="5.29978" r="4.51902" fill="#007F61" />
+            </svg>
           </div>
-          <div> <p id="popular">Most Popular</p></div>
-       </div>
-       <div class="main-content2">
-           <div><p id="price2">DKK 345.00</p></div>
-           <div> <strike><p id="amount">DKK 195.00</p></strike></div>
-           <div><h6 id="sale2">40% off</h6></div>
-       </div>
-       <div class="size-select">
-             <p class="tag1">#1</p>
-           <ul>
-               <h6 id="size-chat">Size</h6>
-               <li>
-                   <select class="select-sizes">
-                   <option id="size">s </option>
-                     <option>m </option>
-                       <option>l </option>
-               </select></li>
-           </ul>
-             <ul>
-               <h6 id="size-chat">Colour</h6>
-               <li><select class="select-options">
-                   <option>Red</option>
-                     <option>Green </option>
-                       <option>White</option>
-               </select></li>
-           </ul>
-       </div>
-        <div class="size-select"> 
-            <p class="tag2">#2</p>
-           <ul>
-               <li><select class="select-sizes">
-                   <option>s </option>
-                   <option>m </option>
-                   <option>l </option>
-               </select></li>
-           </ul>
-             <ul>
-               <li><select class="select-options">
-                <option>Red</option>
-                <option>Green </option>
-                  <option>White</option>
-               </select></li>
-           </ul>
-       </div>
-       <h6></h6>
-    </div>
+          <div>
+            <h6 id="main-text">2 Pair</h6>
+          </div>
+          <div>
+            <p id="popular">Most Popular</p>
+          </div>
+        </div>
+        <div class="main-content2">
+          <div>
+            <p id="price2">DKK 345.00</p>
+          </div>
+          <div> <strike>
+              <p id="amount">DKK 195.00</p>
+            </strike></div>
+          <div>
+            <h6 id="sale2">40% off</h6>
+          </div>
+        </div>
+        <div class="size-select">
+          <p class="tag1">#1</p>
+          <ul>
+            <h6 id="size-chat">Size</h6>
+            <li>
+              <select class="select-sizes">
+                <option value="small">s </option>
+                <option value="medium">m </option>
+                <option value="large">l </option>
+              </select>
+            </li>
+          </ul>
+          <ul>
+            <h6 id="size-chat">Colour</h6>
+            <li><select class="select-options">
+                <option value="red">Red</option>
+                <option value="green">Green </option>
+                <option value="white">White</option>
+              </select></li>
+          </ul>
+        </div>
+        <div class="size-select">
+          <p class="tag2">#2</p>
+          <ul>
+            <li><select class="select-sizes">
+                <option value="small">s </option>
+                <option value="medium">m </option>
+                <option value="large">l </option>
+              </select></li>
+          </ul>
+          <ul>
+            <li><select class="select-options">
+                <option value="red">Red</option>
+                <option value="green">Green </option>
+                <option value="white">White</option>
+              </select></li>
+          </ul>
+        </div>
+        <h6></h6>
+      </div>
     </div>
     <div id="content">
-    <div class="content">
+      <div class="content">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-  <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803"/>
-</svg>
+          <circle cx="7.92151" cy="8.20799" r="6.77852" stroke="#DADADA" stroke-width="0.903803" />
+        </svg>
         <div class="text-container">
-       <div>
-        <p class="text">3 Pair</p>
-        <p id="price">DKK 528.00</p>
-       </div>
-       <div>
-        <p id ="sale">60% off</p>
-     </div>
-     </div>
+          <div>
+            <p class="text">3 Pair</p>
+            <p id="price">DKK 528.00</p>
+          </div>
+          <div>
+            <p id="sale">60% off</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div id="bottom-content">
+        <p id="shipping">Free 2 Day Shipping</p>
+        <p class="total-cost">Total : DKK 360.00</p>
+      </div>
+    </div>
+    <div class="button">
+      <p class="card">+ Add to Cart</p>
+    </div>
+    <div>
+      
+      <p id="cpy-right"> &copy; Powered  by Pumper</p>
     </div>
   </div>
-          <div id="content">
-    <div id="bottom-content">
-           <p id="shipping">Free 2 Day Shipping</p>
-         <p class="total-cost">Total : DKK 360.00</p>
-        </div>
-         </div>
-        <div class="button">
-            <p class="card">+ Add to Cart</p>
-            </div>
-            </div>
-           
+
 </body>
+
 </html>
