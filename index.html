@@ -31,6 +31,31 @@
             <p id="sale">50% off</p>
           </div>
         </div>
+        <div id="options-0" style="display: none">
+          <div class="size-select">
+            <p class="tag1">#1</p>
+            <ul>
+              <h6 id="size-chat">Size</h6>
+              <li>
+                <select class="select-sizes">
+                  <option value="small">s</option>
+                  <option value="medium">m</option>
+                  <option value="large">l</option>
+                </select>
+              </li>
+            </ul>
+            <ul>
+              <h6 id="size-chat">Colour</h6>
+              <li>
+                <select class="select-options">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="white">White</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="content-item content-item-bg" onclick="onClick(this)">
@@ -61,49 +86,51 @@
             <h6 id="sale2">40% off</h6>
           </div>
         </div>
-        <div class="size-select">
-          <p class="tag1">#1</p>
-          <ul>
-            <h6 id="size-chat">Size</h6>
-            <li>
-              <select class="select-sizes">
-                <option value="small">s</option>
-                <option value="medium">m</option>
-                <option value="large">l</option>
-              </select>
-            </li>
-          </ul>
-          <ul>
-            <h6 id="size-chat">Colour</h6>
-            <li>
-              <select class="select-options">
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="white">White</option>
-              </select>
-            </li>
-          </ul>
-        </div>
-        <div class="size-select">
-          <p class="tag2">#2</p>
-          <ul>
-            <li>
-              <select class="select-sizes">
-                <option value="small">s</option>
-                <option value="medium">m</option>
-                <option value="large">l</option>
-              </select>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <select class="select-options">
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="white">White</option>
-              </select>
-            </li>
-          </ul>
+        <div id="options-1" style="display: block">
+          <div class="size-select">
+            <p class="tag1">#1</p>
+            <ul>
+              <h6 id="size-chat">Size</h6>
+              <li>
+                <select class="select-sizes">
+                  <option value="small">s</option>
+                  <option value="medium">m</option>
+                  <option value="large">l</option>
+                </select>
+              </li>
+            </ul>
+            <ul>
+              <h6 id="size-chat">Colour</h6>
+              <li>
+                <select class="select-options">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="white">White</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div class="size-select">
+            <p class="tag2">#2</p>
+            <ul>
+              <li>
+                <select class="select-sizes">
+                  <option value="small">s</option>
+                  <option value="medium">m</option>
+                  <option value="large">l</option>
+                </select>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <select class="select-options">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="white">White</option>
+                </select>
+              </li>
+            </ul>
+          </div>
         </div>
         <h6></h6>
       </div>
@@ -120,6 +147,73 @@
           </div>
           <div>
             <p id="sale">60% off</p>
+          </div>
+        </div>
+        <div id="options-2" style="display: none">
+          <div class="size-select">
+            <p class="tag1">#1</p>
+            <ul>
+              <h6 id="size-chat">Size</h6>
+              <li>
+                <select class="select-sizes">
+                  <option value="small">s</option>
+                  <option value="medium">m</option>
+                  <option value="large">l</option>
+                </select>
+              </li>
+            </ul>
+            <ul>
+              <h6 id="size-chat">Colour</h6>
+              <li>
+                <select class="select-options">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="white">White</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div class="size-select">
+            <p class="tag2">#2</p>
+            <ul>
+              <li>
+                <select class="select-sizes">
+                  <option value="small">s</option>
+                  <option value="medium">m</option>
+                  <option value="large">l</option>
+                </select>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <select class="select-options">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="white">White</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div class="size-select">
+            <p class="tag2">#3</p>
+            <ul>
+              <li>
+                <select class="select-sizes">
+                  <option value="small">s</option>
+                  <option value="medium">m</option>
+                  <option value="large">l</option>
+                </select>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <select class="select-options">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="white">White</option>
+                </select>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -146,10 +240,15 @@
           blocks[i].classList.add("content-item-bg");
           const circleElement = document.getElementById("circle-" + i);
           circleElement.setAttribute("fill", "#007F61");
+          const selectElement = document.getElementById("options-" + i);
+          console.log(selectElement);
+          selectElement.style.display = "block";
         } else {
           blocks[i].classList.remove("content-item-bg");
           const circleElement = document.getElementById("circle-" + i);
           circleElement.setAttribute("fill", "#fff");
+          const selectElement = document.getElementById("options-" + i);
+          selectElement.style.display = "none";
         }
       }
     }
